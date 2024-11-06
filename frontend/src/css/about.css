@@ -1,0 +1,108 @@
+/* About Us Page Styling */
+
+.about-us {
+  background-color: #f5f5f5; /* Light background */
+  padding: 5px 4;
+  font-family: Arial, sans-serif; /* Base font family */
+}
+
+.container {
+  max-width: 1024px; /* Set a maximum width for responsiveness */
+  margin: 0 auto; /* Center the content horizontally */
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #333; /* Main text color */
+}
+
+.hero p {
+  font-size: 1.2em;
+  color: #666; /* Subdued text color */
+}
+
+.mission,
+.benefits,
+.commitment {
+  margin-bottom: 50px;
+}
+
+.mission h2,
+.benefits h2,
+.commitment h2 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.mission p,
+.benefits p,
+.commitment p {
+  font-size: 1em;
+  line-height: 1.5;
+  color: #666;
+}
+
+.benefits ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.benefits li {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.benefits li i {
+  font-size: 1.2em;
+  margin-right: 10px;
+  color: #4caf50; /* Green color for benefits */
+}
+
+.call-to-action {
+  text-align: center;
+}
+
+.call-to-action a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2cbeff;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-bottom: 6px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.call-to-action a:hover {
+  background-color: #4caf50; /* Darker green on hover */
+}
+
+/* Media Queries for Responsiveness (Example) */
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .mission h2,
+  .benefits h2,
+  .commitment h2 {
+    font-size: 1.6em;
+  }
+
+  .mission p,
+  .benefits p,
+  .commitment p {
+    font-size: 0.9em;
+  }
+}

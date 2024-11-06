@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */
+
+/* Footer styles */
+footer {
+  margin-top: auto;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  @apply w-full border my-1 py-2 px-3 rounded-2xl;
+}
+button {
+  @apply bg-gray-300;
+}
+button.primary {
+  background-color: #2cbeff;
+  @apply bg-primary p-2 w-full text-white rounded-2xl;
+}
+
+.basic-description {
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.basic-description li {
+  flex-basis: calc(33.333% - 20px);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .basic-description li {
+    flex-basis: 100%;
+    text-align: left;
+  }
+}
+
+/* Services */
+.help-center {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.help-center h1 {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.help-center ul {
+  list-style: none;
+  padding: 0;
+}
+
+.help-center li {
+  margin-bottom: 20px;
+}
+
+.help-center h2 {
+  margin-bottom: 10px;
+}
+/* search-bar */
+.search-bar {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #ccc; /* Add border to the whole search bar */
+  border-radius: 20px; /* Add rounded borders */
+  padding: 10px; /* Add padding to the search bar */
+}
+
+.search-bar input[type="date"] {
+  flex: 1 1 auto; /* Make the date input full width */
+}
+
+.search-bar button {
+  border-left: 1px solid #ccc; /* Add left border to the button */
+}
+
+@media (min-width: 768px) {
+  .search-bar {
+    margin-left: auto;
+    flex-wrap: nowrap;
+  }
+
+  .search-bar input,
+  .search-bar button {
+    flex: 1 1 auto;
+  }
+}
